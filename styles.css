@@ -102,7 +102,7 @@ h3.big-number {
     font-size: 110px;
     font-weight: bolder;
     color: var(--green) !important;
-    margin-top: 0;
+    margin-top: -20px;
     margin-right: 20px;
 }
 
