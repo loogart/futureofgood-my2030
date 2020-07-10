@@ -1,7 +1,7 @@
 :root {
     --green: #3D6832;
     --light-green: #629E51;
-    --light-grey: #D8D8D8;
+    --grey: #D8D8D8;
     --yellow: #FBB03B;
     --pink: #ED8EE2;
 }
@@ -40,7 +40,7 @@ body {
 }
 
 /* page components */
-.generic {
+section.generic {
     padding: 90px 0;
     overflow: hidden;
 }
@@ -69,7 +69,7 @@ h4 {
 
 h1 {
     font-size: 52px !important;
-    line-height: 70px !important;
+    line-height: 1.25 !important;
     text-transform: inherit !important;
     border-top: none !important;
     margin-top: 0 !important;
@@ -77,23 +77,31 @@ h1 {
 }
 
 .hero h1 {
-    margin-bottom: 35px;
+    margin-bottom: 15px!important;
 }
 
 h2 {
     font-size: 32px !important;
-    line-height: 42px !important;
+    line-height: 1.4 !important;
     margin-top: 10px !important;
     color: var(--green) !important;
 }
 
-h3 {}
+h2.white {
+    color: white !important;
+}
+
+h3 {
+    margin-bottom: 30px;
+    line-height: 1.5!important;
+    color: #222 !important;
+}
 
 
 h3.big-number {
     font-size: 110px;
     font-weight: bolder;
-    color: var(--green);
+    color: var(--green) !important;
     margin-top: 0;
     margin-right: 20px;
 }
@@ -101,7 +109,10 @@ h3.big-number {
 p {
     font-size: 16px;
     line-height: 24px;
+    color: #222;
 }
+
+
 
 a.button {
     padding: 15px 40px;
@@ -138,11 +149,15 @@ h4.lead {
 /* columns */
 
 div[class^="box-"] {
-    margin: auto;
+    display: inline-block;
 }
 
 .box-25 {
     width: 25%;
+}
+
+.box-35 {
+    width: 35%;
 }
 
 .box-40 {
@@ -156,6 +171,7 @@ div[class^="box-"] {
 .box-50 {
     width: 50%;
 }
+
 
 .box-60 {
     width: 60%;
@@ -185,18 +201,68 @@ section.featurette {}
     order: 2;
 }
 
-section.quotation{
+section.quotation {
     background-color: var(--green);
-    padding:80px 0;
-    border:20px solid white;
+    padding: 69px 0;
+    border: 20px solid white;
     text-align: center;
-    color:white;
+    color: white;
     font-weight: bold;
     font-size: 24px;
     line-height: 36px;
 }
 
+section.climax {
+    background-color: var(--grey);
+    background-image: url(assets/artwork-5people-pyramid.svg);
+    background-repeat: no-repeat;
+    background-size: 55%;
+    background-position: 120% 0%;
+    background-attachment: fixed;
+}
 
+section.partners {
+    background-color: white;
+    text-align: center;
+
+}
+
+img.logo-partner {
+    width: 200px;
+}
+
+section.faq {
+    background-color: var(--green);
+    background-image: url(assets/artwork-all-hands.svg);
+    background-repeat: no-repeat;
+    background-size: 320px;
+    background-position: 75% 100%;
+}
+
+section.faq p {
+    color: white;
+}
+
+section.faq h3 {
+    color: var(--yellow) !important;
+}
+
+section.faq a,
+.faq a:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+.faq-grid {
+    display: grid;
+    grid-template-columns: 45% 45%;
+    grid-gap: 40px;
+}
+
+section.final-cta{
+    background-color: black;
+    text-align: center;
+}
 
 @media(max-width:767px) {
     .generic {
@@ -250,6 +316,19 @@ section.quotation{
         font-size: 72px;
         margin-bottom: auto;
         margin-right: 15px;
+    }
+
+    section.climax {
+        background-image: none;
+    }
+
+    .faq-grid {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-gap: 40px;
+    }
+    section.faq{
+        background-image: none;
     }
 }
 
