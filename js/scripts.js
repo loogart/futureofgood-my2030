@@ -6,7 +6,6 @@
       autoplay: true,
       name: "Bailey"
   })
-  animation1.setSubframe(false);
 
   var animation2 = bodymovin.loadAnimation({
       container: document.getElementById('bm2'),
@@ -16,7 +15,6 @@
       autoplay: true,
       name: "Cheyenne"
   })
-  animation2.setSubframe(false);
 
   var animation3 = bodymovin.loadAnimation({
       container: document.getElementById('bm3'),
@@ -26,7 +24,6 @@
       autoplay: true,
       name: "Lliam"
   })
-  animation3.setSubframe(false);
 
   var animation3 = bodymovin.loadAnimation({
       container: document.getElementById('bm4'),
@@ -36,4 +33,3 @@
       autoplay: true,
       name: "Luna"
   })
-  animation4.setSubframe(false);
