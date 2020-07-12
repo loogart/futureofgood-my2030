@@ -17,6 +17,17 @@
             margin-bottom: 0 !important;
         }
 
+        #bm1 {
+            background-color: #ffffff;
+            width: 100%;
+            height: auto;
+            display: block;
+            overflow: hidden;
+            transform: translate3d(0, 0, 0);
+            text-align: center;
+            opacity: 1;
+        }
+
     </style>
 </head>
 
@@ -102,7 +113,8 @@
 
                     <div class="flex-cont">
                         <div class="featurette-artwork" data-aos="fade-up">
-                            <img src="./assets/artwork-1bailey.svg" alt="" style="width:100%;">
+                            <!--                            <img src="./assets/artwork-1bailey.svg" alt="" style="width:100%;">-->
+                            <div id="bm1"></div>
                         </div>
                         <div class="featurette-content featurette-content__before">
                             <h3 class="big-number">1</h3>
@@ -323,7 +335,20 @@
         AOS.init();
 
     </script>
-    <script src='https://futureofgood.co/wp-content/themes/fog/assets/js/scripts.min.js'></script>
+    <script src="https://futureofgood.co/wp-content/themes/fog/assets/js/scripts.min.js"></script>
+    <script src="./js/lottie.js"></script>
+    <script>
+        var animation1 = bodymovin.loadAnimation({
+            container: document.getElementById('bm1'), // Required
+            path: 'js/1bailey.json', // Required
+            renderer: 'svg', // Required
+            loop: true, // Optional
+            autoplay: true, // Optional
+            name: "Hello World", // Name for future reference. Optional.
+        })
+
+    </script>
+
 </body>
 
 </html>
