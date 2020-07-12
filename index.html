@@ -17,7 +17,10 @@
             margin-bottom: 0 !important;
         }
 
-        #bm1 {
+        #bm1,
+        #bm2,
+        #bm3,
+        #bm4 {
             background-color: #ffffff;
             width: 100%;
             height: auto;
@@ -113,7 +116,7 @@
 
                     <div class="flex-cont">
                         <div class="featurette-artwork" data-aos="fade-up">
-                            <!--                            <img src="./assets/artwork-1bailey.svg" alt="" style="width:100%;">-->
+                            <!--<img src="./assets/artwork-1bailey.svg" alt="" style="width:100%;">-->
                             <div id="bm1"></div>
                         </div>
                         <div class="featurette-content featurette-content__before">
@@ -128,7 +131,8 @@
 
                     <div class="flex-cont">
                         <div class="featurette-artwork" data-aos="fade-up">
-                            <img src="./assets/artwork-3sundance.svg" alt="" style="width:100%;border-top-right-radius: 80px">
+                            <!--                            <img src="./assets/artwork-3sundance.svg" alt="" style="width:100%;border-top-right-radius: 80px">-->
+                            <div id="bm2" style="width:100%;border-top-right-radius: 80px"></div>
                         </div>
                         <div class="featurette-content">
                             <h3 class="big-number">2</h3>
@@ -141,20 +145,22 @@
 
                     <div class="flex-cont">
                         <div class="featurette-artwork" data-aos="fade-up">
-                            <img src="./assets/artwork-2lliam.svg" alt="" style="width:100%;border-top-left-radius: 80px">
+                            <!--                            <img src="./assets/artwork-2lliam.svg" alt="" style="width:100%;border-top-left-radius: 80px">-->
+                            <div id="bm3" style="width:100%;border-top-left-radius: 80px"></div>
                         </div>
                         <div class="featurette-content featurette-content__before">
                             <h3 class="big-number">3</h3>
                             <div>
                                 <h2>This is Lliam.</h2>
-                                <p>Lliam founded Iron & Earth to help oil and gas workers transition their skills to renewable energy. With unemployment at record rates, decent work is a major priority for pandemic recovery — and Lliam is forging new pathways for energy industry workers.</p>
+                                <p>Lliam founded Iron &amp; Earth to help oil and gas workers transition their skills to renewable energy. With unemployment at record rates, decent work is a major priority for pandemic recovery — and Lliam is forging new pathways for energy industry workers.</p>
                             </div>
                         </div>
                     </div>
 
                     <div class="flex-cont">
                         <div class="featurette-artwork" data-aos="fade-up">
-                            <img src="./assets/artwork-4genecis.svg" alt="" style="width:100%;border-top-right-radius: 80px">
+                            <!--                            <img src="./assets/artwork-4genecis.svg" alt="" style="width:100%;border-top-right-radius: 80px">-->
+                            <div id="bm4" style="width:100%;border-top-right-radius: 80px"></div>
                         </div>
                         <div class="featurette-content">
                             <h3 class="big-number">4</h3>
@@ -339,14 +345,44 @@
     <script src="./js/lottie.js"></script>
     <script>
         var animation1 = bodymovin.loadAnimation({
-            container: document.getElementById('bm1'), // Required
-            path: 'js/1bailey.json', // Required
-            renderer: 'svg', // Required
-            loop: true, // Optional
-            autoplay: true, // Optional
-            name: "Hello World" // Name for future reference. Optional.
+            container: document.getElementById('bm1'),
+            path: 'js/1bailey.json',
+            renderer: 'svg',
+            loop: true,
+            autoplay: true,
+            name: "Bailey"
         })
-        animation1.setSubframe(false)
+        animation1.setSubframe(false);
+
+        var animation2 = bodymovin.loadAnimation({
+            container: document.getElementById('bm2'),
+            path: 'js/2cheyenne.json',
+            renderer: 'svg',
+            loop: true,
+            autoplay: true,
+            name: "Cheyenne"
+        })
+        animation2.setSubframe(false);
+
+        var animation3 = bodymovin.loadAnimation({
+            container: document.getElementById('bm3'),
+            path: 'js/3lliam.json',
+            renderer: 'svg',
+            loop: true,
+            autoplay: true,
+            name: "Lliam"
+        })
+        animation3.setSubframe(false);
+
+        var animation3 = bodymovin.loadAnimation({
+            container: document.getElementById('bm4'),
+            path: 'js/4luna.json',
+            renderer: 'svg',
+            loop: true,
+            autoplay: true,
+            name: "Luna"
+        })
+        animation4.setSubframe(false);
 
     </script>
 
