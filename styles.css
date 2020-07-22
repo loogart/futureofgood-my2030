@@ -224,11 +224,21 @@ section.climax {
 section.partners {
     background-color: white;
     text-align: center;
+}
 
+.partners-grid {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-row-gap:40px;
+    align-content: center;
+    padding:40px 0;
+        justify-content: center;
 }
 
 img.logo-partner {
-    width: 200px;
+    max-width: 169px;
+    display: inline-block;
+    margin:auto;
 }
 
 section.faq {
@@ -267,6 +277,9 @@ section.final-cta {
 section.final-cta h2{
     color:var(--light-green)!important;
 }
+
+
+
 
 @media(max-width:767px) {
     .generic {
@@ -325,6 +338,13 @@ section.final-cta h2{
     section.climax {
         background-image: none;
     }
+    
+    .partners-grid {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-row-gap: 40px;
+        justify-content: center;
+    }
 
     .faq-grid {
         display: grid;
@@ -357,6 +377,17 @@ section.final-cta h2{
         background-repeat: no-repeat, no-repeat;
         background-size: 500px, 500px;
         background-position: -35% 140%, 140% 140%;
+    }
+}
+
+
+@media (min-width:768px) and (max-width:991px){
+    .partners-grid {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-gap: 40px;
+        padding:0 30px;
+        justify-content: center;
     }
 }
 
