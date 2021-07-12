@@ -1,0 +1,579 @@
+// Import Google fonts
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Spartan:wght@700;900&display=swap');
+
+// Required
+@import "../bootstrap/functions";
+@import "../bootstrap/variables";
+@import "../bootstrap/mixins";
+
+// Re-define BS colors
+$orange: #f7931e;
+$yellow: #fbb03b;
+$green:#629e51;
+$red:#c14339;
+
+// Define new colors
+$pink:#ed8ee2;
+$dark-green:#3d6833;
+$dark-grey:#182614;
+$grey:#d8d8d8;
+$light-grey:#eae8e8;
+
+// Map colors
+$colors: ("orange":#f7931e, "yellow":#fbb03b, "green":#629e51, "red":#c14339, "pink":$pink, "dark-green":$dark-green, "dark-grey": $dark-grey, "grey":$grey, "light-grey":$light-grey);
+
+//Map theme-colors
+$theme-colors: ("primary": $dark-green, "success":$green, "warning":$yellow, "dark":$dark-grey, "light":$light-grey, "info":$pink);
+
+// customize theme
+$body-bg: white;
+$body-color: $dark-grey;
+$font-family-sans-serif: 'Roboto',
+sans-serif;
+$headings-font-family:'Spartan',
+sans-serif;
+$input-font-family: 'Roboto',
+sans-serif;
+$font-family-base: $input-font-family;
+$navbar-nav-link-padding-x:1.25rem;
+$navbar-dark-toggler-border-color: transparent;
+$navbar-dark-color: rgba($white, .8);
+$navbar-dark-hover-color: rgba($white, 1);
+$navbar-dark-active-color: $white;
+$btn-border-radius: 8px;
+$link-color: $dark-green;
+$link-hover-color: darken($link-color, 15%);
+$custom-control-indicator-checked-bg: $green;
+$custom-control-indicator-active-bg:$green;
+$custom-control-indicator-checked-border-color:$green;
+$input-focus-box-shadow:0 0 0 0.2rem rgba(121, 175, 108, 0.36);
+$transition-collapse:height .15s ease-in-out;
+$modal-content-border-radius: 24px;
+$modal-header-border-width:0;
+$modal-footer-border-width:0;
+$modal-header-border-color:transparent;
+$modal-footer-border-color:transparent;
+$modal-fade-transform: scale(1.2) translate(0, 50px);
+$modal-transition: transform .15s ease-out;
+
+// Bootstrap
+@import "../bootstrap/bootstrap.scss";
+
+// Typography
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 900;
+}
+
+.logo-navbar {
+    width: 300px;
+
+    @include media-breakpoint-down(md) {
+        width: 269px;
+    }
+
+    @include media-breakpoint-down(sm) {
+        width: 200px;
+    }
+}
+
+.navbar-hat {
+    border-top: 8px solid $green;
+
+    @include media-breakpoint-down(md) {
+        border-top: 6px solid $green;
+    }
+}
+
+
+// Layout
+.results-layout {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.filters {
+    display: block;
+    width: 320px;
+    padding: 2.5rem 1.5rem;
+    max-height: 100vh;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    z-index: 1;
+    overflow: scroll;
+
+    @include media-breakpoint-down(sm) {
+        display: none;
+
+        &.d-block {
+            width: 75%;
+            height: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: white;
+            z-index: 3;
+            box-shadow:
+                0 2.8px 2.2px rgba(0, 0, 0, 0.02),
+                0 6.7px 5.3px rgba(0, 0, 0, 0.028),
+                0 12.5px 10px rgba(0, 0, 0, 0.035),
+                0 22.3px 17.9px rgba(0, 0, 0, 0.042),
+                0 41.8px 33.4px rgba(0, 0, 0, 0.05),
+                0 100px 80px rgba(0, 0, 0, 0.07);
+        }
+
+    }
+
+}
+
+.list-filters li {
+    border-bottom: 2px solid $light-grey;
+}
+
+.filter-accordion {
+    display: block;
+    padding: 20px 0;
+    color: $dark-grey;
+
+    &:hover {
+        text-decoration: none;
+        background-color: lighten($light-grey, 7%);
+    }
+}
+
+.filter-choices {
+    padding-bottom: 20px;
+}
+
+.results {
+    width: 100%;
+}
+
+.hero-dismissable {
+    display: flex;
+    align-items: stretch;
+    position: relative;
+    width: 100%;
+    border-radius: 24px;
+    overflow: hidden;
+    margin: 30px auto;
+    box-shadow:
+        0 4px 3.9px rgba(0, 0, 0, 0.028),
+        0 13.4px 13px rgba(0, 0, 0, 0.042),
+        0 60px 58px rgba(0, 0, 0, 0.07);
+
+    @include media-breakpoint-down(md) {
+        flex-direction: column;
+    }
+
+    .hero-text {
+        padding: 3.5rem;
+
+        @include media-breakpoint-down(sm) {
+            padding: 1.5rem;
+
+        }
+    }
+
+    .hero-img {
+        width: 420px;
+        height: 100%;
+        object-fit: cover;
+
+        @include media-breakpoint-up(xl) {
+            width: 380px;
+            height: 100%;
+        }
+
+
+        @include media-breakpoint-down(md) {
+            width: 100%;
+            height: 200px;
+        }
+    }
+
+    h1 {
+        font-size: $h4-font-size;
+        font-weight: 900;
+        line-height: $headings-line-height*1.25;
+    }
+
+}
+
+.close-this {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    z-index: 1;
+}
+
+.results-header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    background-color: white;
+    border-bottom: 2px solid $light-grey;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.open-mobile-filters {
+    display: block;
+}
+
+.close-mobile-filters {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.supertitle {
+    display: block;
+    color: $dark-green;
+    font-size: $font-size-sm;
+    margin-bottom: 15px;
+}
+
+.card-view {
+    padding: 3rem 0;
+}
+
+.card {
+    border: 3px solid $light-grey;
+    border-radius: 0;
+    transition: all .15s ease-in-out;
+    position: relative;
+    margin-bottom: 2.5rem;
+    align-items: stretch;
+
+    .card-img-top {
+        width: 100%;
+        object-fit: cover;
+        background-color: $light-grey;
+        height: 120px;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        margin-left: -8px;
+        margin-top: -8px;
+    }
+
+    .card-body {
+    }
+
+    .card-title {
+        color: $dark-green;
+        font-size: 16px;
+        font-weight: 900;
+        margin-bottom: 5px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .card-author {
+        color: $green;
+        font-size: 13px;
+        margin-bottom: 7px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .card-text {
+        font-size: 13px;
+    }
+
+    &:hover {
+        box-shadow:
+            0 1.8px 3.3px rgba(0, 0, 0, 0.028),
+            0 6px 10.9px rgba(0, 0, 0, 0.042),
+            0 27px 49px rgba(0, 0, 0, 0.07);
+    }
+}
+
+.filter-choices .custom-checkbox {
+    margin-bottom: $spacer/2;
+}
+
+.filter-plus {
+    transition: all .25s ease-in-out;
+    margin-right: $spacer/2;
+
+    &.filter-plus-open {
+        transform: rotate(45deg);
+        display: inline-block;
+    }
+}
+
+.badge {
+    color: white;
+
+    &.badge-sdg1 {
+        background-color: #D23A44;
+
+        &::after {
+            content: "No poverty";
+        }
+    }
+
+    &.badge-sdg2 {
+        background-color: #D5A84F;
+
+        &::after {
+            content: "Zero Hunger";
+        }
+    }
+
+    &.badge-sdg3 {
+        background-color: #629E51;
+
+        &::after {
+            content: "Good Health";
+        }
+    }
+
+    &.badge-sdg4 {
+        background-color: #B73336;
+
+        &::after {
+            content: "Quality Education";
+        }
+    }
+
+    &.badge-sdg5 {
+        background-color: #DC4F3A;
+
+        &::after {
+            content: "Gender Equality";
+        }
+    }
+
+    &.badge-sdg6 {
+        background-color: #5CBDE2;
+
+        &::after {
+            content: "Clean Water";
+        }
+    }
+
+    &.badge-sdg7 {
+        background-color: #F2C546;
+
+        &::after {
+            content: "Clean Energy";
+        }
+    }
+
+    &.badge-sdg8 {
+        background-color: #962A45;
+
+        &::after {
+            content: "Decent Work";
+        }
+    }
+
+    &.badge-sdg9 {
+        background-color: #E1713F;
+
+        &::after {
+            content: "Innovation";
+        }
+    }
+
+    &.badge-sdg10 {
+        background-color: #CE3481;
+
+        &::after {
+            content: "Reduced Inequalities";
+        }
+    }
+
+    &.badge-sdg11 {
+        background-color: #EBA046;
+
+        &::after {
+            content: "Sustainable Cities";
+        }
+    }
+
+    &.badge-sdg12 {
+        background-color: #B78E40;
+
+        &::after {
+            content: "Responsible Consumption";
+        }
+    }
+
+    &.badge-sdg13 {
+        background-color: #507C4C;
+
+        &::after {
+            content: "Climate Action";
+        }
+    }
+
+    &.badge-sdg14 {
+        background-color: #4896CF;
+
+        &::after {
+            content: "Life Below Water";
+        }
+    }
+
+    &.badge-sdg15 {
+        background-color: #72B757;
+
+        &::after {
+            content: "Life on Land";
+        }
+    }
+
+    &.badge-sdg16 {
+        background-color: #30699B;
+
+        &::after {
+            content: "Peace, Justice";
+        }
+    }
+
+    &.badge-sdg17 {
+        background-color: #244968;
+
+        &::after {
+            content: "Partnerships";
+        }
+    }
+
+}
+
+
+
+#map {
+    width: 100%;
+    height: 80vh;
+}
+
+.img-sign-in {
+    display: block;
+    width: 50%;
+    object-fit: cover;
+    height: 420px;
+    object-position: top;
+
+    @include media-breakpoint-down(md) {
+        width: 100%;
+        height: 320px;
+    }
+}
+
+.modal-sign-in {
+    width: 50%;
+    padding: 2.5rem;
+
+    @include media-breakpoint-down(md) {
+        width: 100%;
+        padding: 1rem;
+    }
+}
+
+.icon-voted {
+    max-height: 50px;
+    margin-bottom: $spacer*1.25;
+}
+
+.position-relative {
+    position: relative !important;
+}
+
+.sub-nav {
+    display: block;
+    width: 100%;
+    padding: 15px 0;
+
+}
+
+section.project {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.location {
+    color: $dark-green;
+    font-family: 'Spartan', sans-serif;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.author {
+    font-family: 'Spartan', sans-serif;
+    font-size: 14px;
+    margin-top: 12px;
+    margin-bottom: 20px;
+    display: block;
+    color: $green;
+}
+
+
+.sdg-placeholder {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    padding: 10px 0;
+    margin-top: 30px;
+
+    img {
+        width: 69px;
+        margin-right: 15px;
+        margin-bottom: 15px;
+        border-radius: 6px;
+    }
+}
+
+.voting-box {
+    border: 3px solid $light-grey;
+    text-align: center;
+    padding: 2.5rem;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 40px;
+
+}
+
+footer {
+    background-color: $light-grey;
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+    p {
+        font-size: 14px;
+    }
+
+    a {
+        color: $dark-grey;
+        font-size: 14px;
+    }
+
+    h5 {
+        color: $dark-green;
+        font-size: 15px;
+        margin-bottom: $spacer;
+    }
+
+    li {
+        margin-bottom: 10px;
+    }
+}

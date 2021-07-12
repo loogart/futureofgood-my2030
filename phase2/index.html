@@ -1,0 +1,653 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" sizes="192x192" href="./img/favicon.png">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Canada's Top Recovery Projects">
+    <link rel="apple-touch-icon-precomposed" href="./img/favicon.png">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./css/custom.css">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+    <!-- Fontawesome -->
+    <script src="https://kit.fontawesome.com/595e4f1672.js" crossorigin="anonymous"></script>
+
+    <!-- Primary Meta Tags -->
+    <title>Canada's Top Recovery Projects | Future of Good</title>
+    <meta name="title" content="Canada's Top Recovery Projects by Future of Good">
+    <meta name="description" content="You told us what your favourite recovery projects were. Now, your votes can help feature the projects in our stories and artwork through 2021. #my2030">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://loogart.github.io/fog-my2030-phase2">
+    <meta property="og:title" content="Canada's Top Recovery Projects by Future of Good">
+    <meta property="og:description" content="You told us what your favourite recovery projects were. Now, your votes can help feature the projects in our stories and artwork through 2021. #my2030">
+    <meta property="og:image" content="https://loogart.github.io/fog-my2030-phase2/img/og-image.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://loogart.github.io/fog-my2030-phase2">
+    <meta property="twitter:title" content="Canada's Top Recovery Projects by Future of Good">
+    <meta property="twitter:description" content="You told us what your favourite recovery projects were. Now, your votes can help feature the projects in our stories and artwork through 2021. #my2030">
+    <meta property="twitter:image" content="https://loogart.github.io/fog-my2030-phase2/img/og-image.jpg">
+</head>
+
+
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-primary navbar-hat">
+        <div class="container">
+            <a class="navbar-brand" href="./"><img class="logo-navbar" src="./img/logo.svg" alt="homepage"><span class="sr-only">(current)</span></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://futureofgood.co/recovery-projects/" target="_blank">About </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-toggle="modal" data-target="#popupSignIn">Sign in</a>
+                    </li>
+                </ul>
+                <form class="form-inline">
+                    <a class="btn btn-warning ml-0 ml-md-3" href="#explore">Explore</a>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="results-layout">
+
+            <!-- filters -->
+            <nav class="filters">
+                <a href="#" class="d-inline-block d-md-none close-mobile-filters"><i class="fad fa-times-circle fa-2x"></i></a>
+                <h2 class="h5 mt-0">Find a project</h2>
+                <ul class="list-unstyled list-filters">
+                    <!-- filter 1 -->
+                    <li>
+                        <a class="filter-accordion" data-toggle="collapse" href="#filter1" role="button">
+                            <span class="filter-plus">+</span> Province
+                        </a>
+                        <div class="collapse" id="filter1">
+                            <div class="filter-choices">
+                                <div class="container">
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="province1">
+                                        <label class="custom-control-label" for="province1">Ontario</label>
+                                    </div>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="province2">
+                                        <label class="custom-control-label" for="province2">Quebec</label>
+                                    </div>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="province3">
+                                        <label class="custom-control-label" for="province3">British-Columbia</label>
+                                    </div>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="province4">
+                                        <label class="custom-control-label" for="province4">Alberta</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <!-- filter 2 -->
+                    <li>
+                        <a class="filter-accordion" data-toggle="collapse" href="#filter2" role="button">
+                            <span class="filter-plus">+</span> City
+                        </a>
+                        <div class="collapse" id="filter2">
+                            <div class="filter-choices">
+                                <div class="container">
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="city1">
+                                        <label class="custom-control-label" for="city1">Ottawa</label>
+                                    </div>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="city2">
+                                        <label class="custom-control-label" for="city2">Toronto</label>
+                                    </div>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="city3">
+                                        <label class="custom-control-label" for="city3">Montreal</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- filter 3 -->
+                    <li>
+                        <a class="filter-accordion" data-toggle="collapse" href="#filter3" role="button">
+                            <span class="filter-plus">+</span> Issue area
+                        </a>
+                        <div class="collapse" id="filter3">
+                            <div class="filter-choices">
+                                <div class="container">
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="issueArea1">
+                                        <label class="custom-control-label" for="issueArea1">Issue A</label>
+                                    </div>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="issueArea2">
+                                        <label class="custom-control-label" for="issueArea2">Issue B</label>
+                                    </div>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="issueArea3">
+                                        <label class="custom-control-label" for="issueArea3">Issue C</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- filter 4 -->
+                    <li>
+                        <a class="filter-accordion" data-toggle="collapse" href="#filter4" role="button">
+                            <span class="filter-plus">+</span> SDG
+                        </a>
+                        <div class="collapse" id="filter4">
+                            <div class="filter-choices">
+                                <div class="container">
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="sdg1">
+                                        <label class="custom-control-label" for="sdg1">SDG 1</label>
+                                    </div>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="sdg2">
+                                        <label class="custom-control-label" for="sdg2">SDG 2</label>
+                                    </div>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="sdg3">
+                                        <label class="custom-control-label" for="sdg3">SDG 3</label>
+                                    </div>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="sdg4">
+                                        <label class="custom-control-label" for="sdg4">SDG 4</label>
+                                    </div>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="sdg5">
+                                        <label class="custom-control-label" for="sdg5">SDG 5</label>
+                                    </div>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="sdg6">
+                                        <label class="custom-control-label" for="sdg6">SDG 6</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- filter 5 -->
+                    <li>
+                        <a class="filter-accordion" data-toggle="collapse" href="#filter5" role="button">
+                            <span class="filter-plus">+</span> Gender
+                        </a>
+                        <div class="collapse" id="filter5">
+                            <div class="filter-choices">
+                                <div class="container">
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="gender1">
+                                        <label class="custom-control-label" for="gender1">Female</label>
+                                    </div>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="gender2">
+                                        <label class="custom-control-label" for="gender2">Male</label>
+                                    </div>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="gender3">
+                                        <label class="custom-control-label" for="gender3">Not specified</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- filter 6 -->
+                    <li>
+                        <a class="filter-accordion" data-toggle="collapse" href="#filter6" role="button">
+                            <span class="filter-plus">+</span> BIPOC
+                        </a>
+                        <div class="collapse" id="filter6">
+                            <div class="filter-choices">
+                                <div class="container">
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="bipoc1">
+                                        <label class="custom-control-label" for="bipoc1">Black</label>
+                                    </div>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="bipoc12">
+                                        <label class="custom-control-label" for="bipoc2">Indigenous</label>
+                                    </div>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="bipoc3">
+                                        <label class="custom-control-label" for="bipoc3">People of color</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- Main content -->
+            <section class="results">
+
+                <!-- Dismissable hero banner -->
+                <div class="container-fluid">
+                    <div class="hero-dismissable">
+                        <div class="hero-text order-1 order-lg-0">
+                            <h1><span class="supertitle">The state of the future is in your hands</span>What do you want the world to look like in 2030?</h1>
+                            <p>You told us what your favourite recovery projects were. Now, your votes can help feature the projects inour stories and artwork through 2021. #my2030</p>
+                            <a class="btn btn-primary shadow" href="#explore">View all projects</a>
+                            <a class="d-block mt-4 small" href="#!">Create a free Future of Good account to vote for your favourite projects.</a>
+                        </div>
+                        <img class="hero-img order-0 order-lg-1" src="./img/artwork.svg" alt="">
+                        <a href="#" class="close-this"><i class="fad fa-times-circle fa-2x"></i></a>
+                    </div>
+                </div>
+
+                <!-- Results header -->
+                <div class="container-fluid results-header" id="explore">
+                    <span class="d-inline-block d-md-none">
+                        <a class="open-mobile-filters py-3" href="#!"><i class="fas fa-sliders-h"></i></a>
+                    </span>
+                    <span class="py-3">Showing 100 results</span>
+                    <div class="custom-control custom-switch py-3">
+                        <input type="checkbox" class="custom-control-input" id="customSwitch1">
+                        <label class="custom-control-label" for="customSwitch1">Map</label>
+                    </div>
+                </div>
+
+                <!-- Card view -->
+                <section class="card-view" id="resultsGrid">
+                    <div class="container-fluid">
+                        <div class="row">
+
+                            <!-- card 1-->
+                            <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                                <div class="card">
+                                    <img src="./img/fallback-img.svg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Name of initiative</h5>
+                                        <p class="card-author">By Sir Mixalot</p>
+                                        <p class="card-text">This project is awesome because it is an awesome project that is super uber cool.</p>
+                                        <div class="d-flex justify-content-between flex-wrap">
+                                            <a href="project.html" class="btn btn-sm btn-outline-primary mb-2">View details</a>
+                                            <a href="#!" class="btn btn-sm btn-primary mb-2 vote-now">Vote</a>
+                                        </div>
+                                        <div class="d-flex justify-content-start flex-wrap mt-3 border-top pt-3">
+                                            <ul class="list-inline mb-0">
+                                                <li class="list-inline-item"><span class="badge bagde-pill badge-sdg1 pr-2">&nbsp;</span></li>
+                                                <li class="list-inline-item"><span class="badge bagde-pill badge-sdg6 pr-2">&nbsp;</span></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- card 2-->
+                            <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                                <div class="card">
+                                    <img src="./img/fallback-img.svg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Name of initiative that is uber long like Snoop Dogg's lyrics</h5>
+                                        <p class="card-author">By Sir Mixalot and Madam Jojo Timbaland</p>
+                                        <p class="card-text">This project is awesome because it is an awesome project that is super uber cool.</p>
+                                        <div class="d-flex justify-content-between flex-wrap">
+                                            <a href="project.html" class="btn btn-sm btn-outline-primary mb-2">View details</a>
+                                            <a href="#!" class="btn btn-sm btn-primary mb-2 vote-now">Vote</a>
+                                        </div>
+                                        <div class="d-flex justify-content-start flex-wrap mt-3 border-top pt-3">
+                                            <ul class="list-inline mb-0">
+                                                <li class="list-inline-item"><span class="badge bagde-pill badge-sdg2 pr-2">&nbsp;</span></li>
+                                                <li class="list-inline-item"><span class="badge bagde-pill badge-sdg3 pr-2">&nbsp;</span></li>
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- card 3-->
+                            <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                                <div class="card">
+                                    <img src="./img/fallback-img.svg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Name of initiative</h5>
+                                        <p class="card-author">By Sir Mixalot</p>
+                                        <p class="card-text">This project is awesome because it is an awesome project that is super uber cool.</p>
+                                        <div class="d-flex justify-content-between flex-wrap">
+                                            <a href="project.html" class="btn btn-sm btn-outline-primary mb-2">View details</a>
+                                            <a href="#!" class="btn btn-sm btn-primary mb-2 vote-now">Vote</a>
+                                        </div>
+                                        <div class="d-flex justify-content-start flex-wrap mt-3 border-top pt-3">
+                                            <ul class="list-inline mb-0">
+                                                <li class="list-inline-item"><span class="badge bagde-pill badge-sdg1 pr-2">&nbsp;</span></li>
+                                                <li class="list-inline-item"><span class="badge bagde-pill badge-sdg6 pr-2">&nbsp;</span></li>
+                                                <li class="list-inline-item"><span class="badge bagde-pill badge-sdg10 pr-2">&nbsp;</span></li>
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- card 4-->
+                            <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                                <div class="card">
+                                    <img src="./img/fallback-img.svg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Name of initiative</h5>
+                                        <p class="card-author">By Sir Mixalot</p>
+                                        <p class="card-text">This project is awesome because it is an awesome project that is super uber cool.</p>
+                                        <div class="d-flex justify-content-between flex-wrap">
+                                            <a href="project.html" class="btn btn-sm btn-outline-primary mb-2">View details</a>
+                                            <a href="#!" class="btn btn-sm btn-primary mb-2 vote-now">Vote</a>
+                                        </div>
+                                        <div class="d-flex justify-content-start flex-wrap mt-3 border-top pt-3">
+                                            <ul class="list-inline mb-0">
+                                                <li class="list-inline-item"><span class="badge bagde-pill badge-sdg4 pr-2">&nbsp;</span></li>
+                                                <li class="list-inline-item"><span class="badge bagde-pill badge-sdg5 pr-2">&nbsp;</span></li>
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> <!-- card 5-->
+                            <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                                <div class="card">
+                                    <img src="./img/fallback-img.svg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Name of initiative</h5>
+                                        <p class="card-author">By Sir Mixalot</p>
+                                        <p class="card-text">This project is awesome because it is an awesome project that is super uber cool.</p>
+                                        <div class="d-flex justify-content-between flex-wrap">
+                                            <a href="project.html" class="btn btn-sm btn-outline-primary mb-2">View details</a>
+                                            <a href="#!" class="btn btn-sm btn-primary mb-2 vote-now">Vote</a>
+                                        </div>
+                                        <div class="d-flex justify-content-start flex-wrap mt-3 border-top pt-3">
+                                            <ul class="list-inline mb-0">
+                                                <li class="list-inline-item"><span class="badge bagde-pill badge-sdg6 pr-2">&nbsp;</span></li>
+                                                <li class="list-inline-item"><span class="badge bagde-pill badge-sdg7 pr-2">&nbsp;</span></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- card 6 -->
+                            <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                                <div class="card">
+                                    <img src="./img/fallback-img.svg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Name of initiative</h5>
+                                        <p class="card-author">By Sir Mixalot</p>
+                                        <p class="card-text">This project is awesome because it is an awesome project that is super uber cool.</p>
+                                        <div class="d-flex justify-content-between flex-wrap">
+                                            <a href="project.html" class="btn btn-sm btn-outline-primary mb-2">View details</a>
+                                            <a href="#!" class="btn btn-sm btn-primary mb-2 vote-now">Vote</a>
+                                        </div>
+                                        <div class="d-flex justify-content-start flex-wrap mt-3 border-top pt-3">
+                                            <ul class="list-inline mb-0">
+                                                <li class="list-inline-item"><span class="badge bagde-pill badge-sdg8 pr-2">&nbsp;</span></li>
+                                                <li class="list-inline-item"><span class="badge bagde-pill badge-sdg9 pr-2">&nbsp;</span></li>
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- card 7 -->
+                            <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                                <div class="card">
+                                    <img src="./img/fallback-img.svg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Name of initiative</h5>
+                                        <p class="card-author">By Sir Mixalot</p>
+                                        <p class="card-text">This project is awesome because it is an awesome project that is super uber cool.</p>
+                                        <div class="d-flex justify-content-between flex-wrap">
+                                            <a href="project.html" class="btn btn-sm btn-outline-primary mb-2">View details</a>
+                                            <a href="#!" class="btn btn-sm btn-primary mb-2 vote-now">Vote</a>
+                                        </div>
+                                        <div class="d-flex justify-content-start flex-wrap mt-3 border-top pt-3">
+                                            <ul class="list-inline mb-0">
+                                                <li class="list-inline-item"><span class="badge bagde-pill badge-sdg10 pr-2">&nbsp;</span></li>
+                                                <li class="list-inline-item"><span class="badge bagde-pill badge-sdg11 pr-2">&nbsp;</span></li>
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- card 8 -->
+                            <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                                <div class="card">
+                                    <img src="./img/fallback-img.svg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Name of initiative</h5>
+                                        <p class="card-author">By Sir Mixalot</p>
+                                        <p class="card-text">This project is awesome because it is an awesome project that is super uber cool.</p>
+                                        <div class="d-flex justify-content-between flex-wrap">
+                                            <a href="project.html" class="btn btn-sm btn-outline-primary mb-2">View details</a>
+                                            <a href="#!" class="btn btn-sm btn-primary mb-2 vote-now">Vote</a>
+                                        </div>
+                                        <div class="d-flex justify-content-start flex-wrap mt-3 border-top pt-3">
+                                            <ul class="list-inline mb-0">
+                                                <li class="list-inline-item"><span class="badge bagde-pill badge-sdg12 pr-2">&nbsp;</span></li>
+                                                <li class="list-inline-item"><span class="badge bagde-pill badge-sdg13 pr-2">&nbsp;</span></li>
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- card 9-->
+                            <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                                <div class="card">
+                                    <img src="./img/fallback-img.svg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Name of initiative</h5>
+                                        <p class="card-author">By Sir Mixalot</p>
+                                        <p class="card-text">This project is awesome because it is an awesome project that is super uber cool.</p>
+                                        <div class="d-flex justify-content-between flex-wrap">
+                                            <a href="project.html" class="btn btn-sm btn-outline-primary mb-2">View details</a>
+                                            <a href="#!" class="btn btn-sm btn-primary mb-2 vote-now">Vote</a>
+                                        </div>
+                                        <div class="d-flex justify-content-start flex-wrap mt-3 border-top pt-3">
+                                            <ul class="list-inline mb-0">
+                                                <li class="list-inline-item"><span class="badge bagde-pill badge-sdg14 pr-2">&nbsp;</span></li>
+                                                <li class="list-inline-item"><span class="badge bagde-pill badge-sdg15 pr-2">&nbsp;</span></li>
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- card 10-->
+                            <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                                <div class="card">
+                                    <img src="./img/fallback-img.svg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Name of initiative</h5>
+                                        <p class="card-author">By Sir Mixalot</p>
+                                        <p class="card-text">This project is awesome because it is an awesome project that is super uber cool.</p>
+                                        <div class="d-flex justify-content-between flex-wrap">
+                                            <a href="project.html" class="btn btn-sm btn-outline-primary mb-2">View details</a>
+                                            <a href="#!" class="btn btn-sm btn-primary mb-2 vote-now">Vote</a>
+                                        </div>
+                                        <div class="d-flex justify-content-start flex-wrap mt-3 border-top pt-3">
+                                            <ul class="list-inline mb-0">
+                                                <li class="list-inline-item"><span class="badge bagde-pill badge-sdg15 pr-2">&nbsp;</span></li>
+                                                <li class="list-inline-item"><span class="badge bagde-pill badge-sdg16 pr-2">&nbsp;</span></li>
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- card 11-->
+                            <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                                <div class="card">
+                                    <img src="./img/fallback-img.svg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Name of initiative</h5>
+                                        <p class="card-author">By Sir Mixalot</p>
+                                        <p class="card-text">This project is awesome because it is an awesome project that is super uber cool.</p>
+                                        <div class="d-flex justify-content-between flex-wrap">
+                                            <a href="project.html" class="btn btn-sm btn-outline-primary mb-2">View details</a>
+                                            <a href="#!" class="btn btn-sm btn-primary mb-2 vote-now">Vote</a>
+                                        </div>
+                                        <div class="d-flex justify-content-start flex-wrap mt-3 border-top pt-3">
+                                            <ul class="list-inline mb-0">
+                                                <li class="list-inline-item"><span class="badge bagde-pill badge-sdg1 pr-2">&nbsp;</span></li>
+                                                <li class="list-inline-item"><span class="badge bagde-pill badge-sdg16 pr-2">&nbsp;</span></li>
+                                                <li class="list-inline-item"><span class="badge bagde-pill badge-sdg17 pr-2">&nbsp;</span></li>
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- load more button -->
+                            <div class="col-12 text-center">
+                                <a href="#" class="btn btn-outline-secondary mb-2"><i class="fas fa-plus mr-2"></i>Load more projects</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Map view -->
+                <section class="map-view d-none" id="resultsMap">
+                    <div id="map"></div>
+                </section>
+            </section>
+        </div>
+    </main>
+
+    <!-- Modals -->
+
+    <!-- Popup Sign in -->
+    <div class="modal fade" id="popupSignIn" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content flex-lg-row align-items-center overflow-hidden position-relative">
+                <a href="#" class="close-this" data-dismiss="modal" aria-label="Close">
+                    <i class="fad fa-times-circle fa-2x"></i>
+                </a>
+                <img class="img-sign-in" src="./img/artwork-sign-in.svg" alt="">
+                <div class="modal-sign-in">
+
+                    <h4 class="modal-title mb-3" id="exampleModalLabel">Sign in</h4>
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block mt-4">Sign in</button>
+                        <div class="text-center mt-3">
+                            <a href="#!">Create an account</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Popup Voted -->
+    <div class="modal fade" id="popupVoted" data-keyboard="false" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body p-4">
+                    <div class="text-center">
+                        <img class="icon-voted" src="./img/icon_voted.svg" alt="">
+                        <h5 class="mb-3" id="exampleModalLabel">Thanks for voting!</h5>
+                        <p>Your support for this project is helping shape the future!<br>Show your support on social media.</p>
+                        <div class="d-flex flex-wrap justify-content-center my-3">
+                            <a href="#!" class="btn btn-sm btn-outline-primary m-2"><i class="fab fa-twitter mr-2"></i>Twitter</a>
+                            <a href="#!" class="btn btn-sm btn-outline-primary m-2 mb-2"><i class="fab fa-facebook mr-2"></i>Facebook</a>
+                            <a href="#!" class="btn btn-sm btn-outline-primary m-2"><i class="fab fa-linkedin mr-2"></i>LinkedIn</a>
+                        </div>
+                        <a href="#!" class="text-dark" data-dismiss="modal">Close this window</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Popup Unvoted -->
+    <div class="modal fade" id="popupUnvoted" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-sm modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body p-4">
+                    <div class="text-center">
+                        <img class="icon-voted" src="./img/icon_unvoted.svg" alt="">
+                        <h5 class="mb-3" id="exampleModalLabel">Remove your vote?</h5>
+                        <p>You are about to remove your vote for this project. Are you sure you want to continue?</p>
+                        <div class="d-flex justify-content-between">
+                            <a href="#!" class="btn btn-outline-secondary" data-dismiss="modal">Cancel</a>
+                            <a href="#!" class="btn btn-danger shadow" data-dismiss="modal" id="confirmRemove">Continue</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 mb-4 mb-md-0">
+                    <h5>Top Recovery Projects</h5>
+                    <p><a href="https://goo.gl/maps/N3AmBy2LsC9Rugz58" target="_blank">123 Slater St. 6th &amp; 7th Floor,<br> Ottawa, ON K1P 5H2</a><br><a href="tel:16136803506" target="_blank">(613) 680-3506</a></p>
+                </div>
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <h5>Stay informed</h5>
+                    <form>
+                        <div class="form-row">
+                            <div class="col-8">
+                                <label class="sr-only" for="inlineFormInputName">Email address</label>
+                                <input type="email" class="form-control" id="inlineFormInputName" placeholder="">
+                            </div>
+                            <div class="col-4">
+                                <button type="submit" class="btn btn-primary">Subscribe</button>
+                            </div>
+                        </div>
+                        <small id="passwordHelpBlock" class="form-text text-muted mt-2">We will send you updates about Canada's Top Recovery Projects.</small>
+                    </form>
+                </div>
+                <div class="col-md-3">
+                    <h5>Follow us</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="https://twitter.com/futureofgood" target="_blank"><i class="fab fa-twitter text-primary mr-2"></i>Twitter</a></li>
+                        <li><a href="https://www.facebook.com/futureofgood/" target="_blank"><i class="fab fa-facebook text-primary mr-2"></i>Facebook</a></li>
+                        <li><a href="https://www.instagram.com/futureofgood_/" target="_blank"><i class="fab fa-instagram text-primary mr-2"></i>Instagram</a></li>
+                        <li><a href="https://www.linkedin.com/company/futureofgood/" target="_blank"><i class="fab fa-linkedin text-primary mr-2"></i>LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="d-flex justify-content-between mt-5">
+                <span class="small text-muted">© 2020 Future of Good. All right reserved.</span>
+                <span><a href="#!" target="_blank" class="small text-muted">Privacy policy</a><span class="small text-muted mx-2">|</span><a href="#!" target="_blank" class="small text-muted">Terms and conditions</a></span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBxEirwPY5lQXNNXuY9lzjQIwGJlWby7Nw&callback=initMap" async defer></script>
+    <script src="./js/scripts.js"></script>
+</body></html>
