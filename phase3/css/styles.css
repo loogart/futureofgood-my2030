@@ -2,10 +2,13 @@
     --green: #3F7E45;
     --yellow: #FCB714;
     --bg-color:#ECF5F1;
+    --sdg1:#EB1C2E;
+    --sdg2:#DCA63A;
 }
 
 body{
     background-color: var(--bg-color);
+    font-family: 'Nunito Sans', sans-serif;
 }
 
 h1,
@@ -13,8 +16,7 @@ h2,
 h3,
 h4,
 h5,
-h6 {
-    font-family: 'Nunito Sans', sans-serif;
+h6 {    
     font-family: 'Poppins', sans-serif;
 }
 
@@ -51,6 +53,10 @@ h1.jumbo{
     padding-left:1.5em;
 }
 
+.border-thick-bottom{
+    border-bottom:solid 12px var(--green);
+}
+
 a.tile{
     display: block;
     padding-top:3em;
@@ -72,17 +78,14 @@ a.tile > img{
     object-fit: cover;
     object-position: top;
     transform: translateY(20px);
-
-
-
 }
 
 .sdg_1{
-    background-color: #EB1C2E;
+    background-color: var(--sdg1);
 }
 
 .sdg_2{
-    background-color: #DCA63A;
+    background-color: var(--sdg2);
 }
 
 
@@ -92,4 +95,18 @@ a.tile:hover{
 
 .supertitle{
     font-size: .5em;
+}
+
+.artwork-logo{
+    display: inline-block;
+    max-height: 40px;
+    margin: auto 10px;
+}
+
+@media (max-width: 992px) {
+    .artwork-logo{
+        display: inline-block;
+        max-height: 25px;
+        margin: auto 5px;
+    }
 }
