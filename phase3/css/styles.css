@@ -4,6 +4,15 @@
     --bg-color:#ECF5F1;
     --sdg1:#EB1C2E;
     --sdg2:#DCA63A;
+    --sdg3:#4C9F38;
+    --sdg4:#C5192D;
+    --sdg5:#FF3A21;
+    --sdg8:#A21942;
+    --sdg9:#F26E24;
+    --sdg10:#DD1367;
+    --sdg11:#F89C25;
+    --sdg13:#3F7E44;
+    
 }
 
 body{
@@ -60,6 +69,7 @@ h1.jumbo{
 a.tile{
     display: block;
     padding-top:3em;
+    height:100%;
     text-align: center;
     text-decoration: none;
     border-radius: 1em;
@@ -68,16 +78,15 @@ a.tile{
     overflow: hidden;
     box-shadow:
   0 12.5px 10px rgba(0, 0, 0, 0.035),
-  0 100px 80px rgba(0, 0, 0, 0.07)
-;
+  0 100px 80px rgba(0, 0, 0, 0.07);
 }
 
 a.tile > img{
     width:100%;
-    height:320px;
+    height:369px;
     object-fit: cover;
     object-position: top;
-    transform: translateY(20px);
+    transform: translateY(30px);
 }
 
 .sdg_1{
@@ -88,6 +97,31 @@ a.tile > img{
     background-color: var(--sdg2);
 }
 
+.sdg_3{
+    background-color: var(--sdg3);
+}
+
+.sdg_4{
+    background-color: var(--sdg4);
+}
+.sdg_5{
+    background-color: var(--sdg5);
+}
+.sdg_8{
+    background-color: var(--sdg8);
+}
+.sdg_9{
+    background-color: var(--sdg9);
+}
+.sdg_10{
+    background-color: var(--sdg10);
+}
+.sdg_11{
+    background-color: var(--sdg11);
+}
+.sdg_13{
+    background-color: var(--sdg13);
+}
 
 a.tile:hover{
    opacity: .9;
